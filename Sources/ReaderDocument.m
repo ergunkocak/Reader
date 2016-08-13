@@ -31,7 +31,6 @@
 
 @property (nonatomic, strong, readwrite) NSString *password;
 @property (nonatomic, strong, readwrite) NSString *filePath;
-@property (nonatomic, strong, readwrite) NSString *emailSubject;
 
 @end
 
@@ -58,8 +57,6 @@
 	NSString *_filePath;
 
 	NSURL *_fileURL;
-
-	NSString *_emailSubject;
 }
 
 #pragma mark - Properties
@@ -73,7 +70,7 @@
 @synthesize bookmarks = _bookmarks;
 @synthesize password = _password;
 @synthesize filePath = _filePath;
-@synthesize emailSubject = _emailSubject;
+@synthesize emailSubject;
 @dynamic fileName, fileURL;
 @dynamic canEmail, canExport, canPrint;
 
